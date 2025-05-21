@@ -5,19 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wedding Seating</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <img src="sparkle.webp" alt="Welcome" class="header-img">
-    <h1>Welcome to Our Wedding!</h1>
-    <label for="nameInput">Enter your name to find your seat:</label>
-    <input id="nameInput" type="text" placeholder="Start typing..." autocomplete="off">
-    <ul id="autocomplete-list"></ul>
-    <div id="result" class="hidden">
-      <h2>You're at Table <span id="tableNumber"></span></h2>
-      <img id="tableImage" src="" alt="Table Map">
-      <h3>Your tablemates (Name Cheat Sheet!):</h3>
-      <ul id="tablemates"></ul>
+    <div class="header-container">
+      <img src="sparkle.webp" alt="Header Image" class="header-img">
+    </div>
+    <div class="content-container">
+      <h1>Welcome to <br> CORINNE AND NATHANIEL'S WEDDING</h1>
+      <label for="nameInput">Enter your name to find your seat:</label>
+      <input id="nameInput" type="text" placeholder="Start typing..." autocomplete="off">
+      <ul id="autocomplete-list"></ul>
+      <div id="result" class="hidden">
+        <h2>You're at Table <span id="tableNumber"></span></h2>
+        <img id="tableImage" src="" alt="Table Map">
+        <h3>Your tablemates (Name Cheat Sheet!):</h3>
+        <ul id="tablemates"></ul>
+      </div>
+      <a href="https://theknot.com/ncgreve" class="return-button">RETURN TO OUR WEBSITE</a>
     </div>
   </div>
   <script src="script.js"></script>

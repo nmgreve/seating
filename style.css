@@ -1,58 +1,124 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    font-family: "Asap Condensed"; /* Stylish sans-serif font */
+    padding: 0;
+    margin: 0; /* Remove default margin */
     background: rgb(41, 58, 79);
     color: #f0f0f0;
     text-align: center;
-  }
-  
-  .container {
+}
+
+.container {
+    position: relative; /* Ensure the header image stays in the normal flow */
+    width: 100%; /* Full width of the viewport */
+    overflow: hidden; /* Prevent any overflow issues */
+}
+
+.header-container {
+    position: relative; /* Ensure the header image stays in the normal flow */
+    width: 100%; /* Full width of the viewport */
+    overflow: hidden; /* Prevent any overflow issues */
+    margin: 0; /* Ensure no extra margin below the header */
+    padding: 0;
+}
+
+.header-img {
+    width: 100vw; /* Fill the entire width of the viewport */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    position: relative; /* Change to relative positioning */
+    top: 0; /* Align to the top of the page */
+    left: 0; /* Align to the left of the page */
+}
+
+.content-container {
     max-width: 500px;
     margin: 0 auto;
-  }
-  
-  .header-img {
-    width: 100%;
-    max-width: 300px;
+    margin-top: -20px;
+    margin-bottom: 100px;
+}
+
+.content-container h1 {
+    font-size: 36px; /* Slightly larger font for the header */
     margin-bottom: 20px;
-  }
-  
-  input {
-    width: 100%;
+    font-family: "Asap Condensed"; /* Apply the new font */
+}
+
+.content-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "Asap Condensed"; /* Apply the new font to other elements */
+}
+
+input {
+    margin-top: 10px;
+    width: 100%; /* Ensure the input spans the full width of its container */
     padding: 12px;
     font-size: 16px;
-  }
-  
-  ul#autocomplete-list {
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    font-family: "Asap Condensed"; /* Apply the new font to other elements */
+}
+
+ul#autocomplete-list {
     list-style: none;
     padding: 0;
     margin-top: 0;
-    background-color: rgb(41, 58, 79);
+    background-color: rgb(34, 48, 66);
     max-height: 200px;
     overflow-y: auto;
     border: 1px solid #e2e8f0;
-  }
-  
-  ul#autocomplete-list li {
+    width: 100%; /* Match the width of the input field */
+    box-sizing: border-box; /* Ensure the width includes padding and border */
+}
+
+ul#autocomplete-list li {
     padding: 10px;
     cursor: pointer;
-  }
-  
-  ul#autocomplete-list li:hover {
+    font-family: "Asap Condensed"; /* Apply the new font to other elements */
+}
+
+ul#autocomplete-list li:hover {
     background-color: rgb(27, 38, 52);
-  }
-  
-  #result {
+}
+
+ul#autocomplete-list, ul#tablemates {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+#result {
     margin-top: 20px;
-  }
-  
-  #result img {
+}
+
+#result img {
     max-width: 100%;
     height: auto;
     margin-top: 10px;
-  }
-  
-  .hidden {
+}
+
+.hidden {
     display: none;
-  }
-  
+}
+
+.return-button {
+    position: fixed; /* Fix the button relative to the viewport */
+    bottom: 30px; /* 40px from the bottom of the viewable page */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(41, 58, 79);
+    background-color: #f0f0f0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-family: "Asap Condensed"; /* Apply the new font to the button */
+}
+
+.return-button:hover {
+    background-color: #c8c8c8; /* Darker blue on hover */
+}
