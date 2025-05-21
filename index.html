@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wedding Seating</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="your-welcome-image.jpg" alt="Welcome" class="header-img">
+    <h1>Welcome to the Wedding!</h1>
+    <label for="nameInput">Enter your name:</label>
+    <input id="nameInput" type="text" placeholder="Start typing..." autocomplete="off">
+    <ul id="autocomplete-list"></ul>
+    <div id="result" class="hidden">
+      <h2>You're at Table <span id="tableNumber"></span></h2>
+      <img id="tableImage" src="" alt="Table Map">
+      <h3>Your tablemates:</h3>
+      <ul id="tablemates"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
