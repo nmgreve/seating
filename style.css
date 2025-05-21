@@ -34,13 +34,14 @@ body {
 
 .content-container {
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto;
+    padding: 20px;
     margin-top: -20px;
     margin-bottom: 100px;
 }
 
 .content-container h1 {
-    font-size: 36px; /* Slightly larger font for the header */
+    font-size: 32px; /* Slightly larger font for the header */
     margin-bottom: 20px;
     font-family: "Asap Condensed"; /* Apply the new font */
 }
@@ -108,7 +109,7 @@ ul#autocomplete-list, ul#tablemates {
     bottom: 30px; /* 40px from the bottom of the viewable page */
     left: 50%; /* Center the button horizontally */
     transform: translateX(-50%); /* Adjust for centering */
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-size: 16px;
     color: rgb(41, 58, 79);
     background-color: #f0f0f0;
