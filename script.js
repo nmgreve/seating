@@ -25,6 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
         list.appendChild(li);
     });
   });
+
+  document.getElementById('clearButton').addEventListener('click', () => {
+    const input = document.getElementById('nameInput');
+    input.value = ''; // Clear the input field
+    input.focus(); // Refocus the input field
+    document.getElementById('autocomplete-list').innerHTML = ''; // Clear the autocomplete list
+  });
 });
 
 function selectName(name) {

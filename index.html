@@ -17,7 +17,10 @@
     <div class="content-container">
       <h1>Welcome to <br> CORINNE & NATHANIEL'S WEDDING</h1>
       <label for="nameInput">Enter your name to find your seat:</label>
-      <input id="nameInput" type="search" placeholder="Start typing..." autocomplete="off">
+      <div class="input-container">
+        <input id="nameInput" type="text" placeholder="Start typing..." autocomplete="off">
+        <button id="clearButton" class="clear-button" type="button">X</button>
+      </div>
       <ul id="autocomplete-list"></ul>
       <div id="result" class="hidden">
         <h2>You're at Table <span id="tableNumber"></span></h2>
