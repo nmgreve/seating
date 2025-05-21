@@ -12,16 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   input.addEventListener('input', function () {
     const value = this.value.toLowerCase();
-    list.innerHTML = '';
+    list.innerHTML = ''; // Clear the current list
 
-    if (!value) return;
+    if (!value) return; // Exit if the input is empty
 
+    // Filter and limit the results to the top 4 matches
     const matches = data.filter(item => item.name.toLowerCase().includes(value));
-    matches.slice(0, 10).forEach(item => {
-      const li = document.createElement('li');
-      li.textContent = item.name;
-      li.addEventListener('click', () => selectName(item.name));
-      list.appendChild(li);
+    matches.slice(0, 4).forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item.name;
+        li.addEventListener('click', () => selectName(item.name));
+        list.appendChild(li);
     });
   });
 });
