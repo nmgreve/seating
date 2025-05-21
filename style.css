@@ -24,10 +24,8 @@ body {
 }
 
 .header-img {
-    width: 150vw; /* Fill the entire width of the viewport */
     height: auto; /* Maintain aspect ratio */
     display: block;
-    transform: translateX(-14%);
     margin: 0; /* Remove any margin */
     padding: 0; /* Remove any padding */
     position: relative; /* Change to relative positioning */
@@ -36,7 +34,6 @@ body {
 }
 
 .content-container {
-    max-width: 500px;
     margin: auto;
     padding: 20px;
     margin-top: -70px;
@@ -44,11 +41,39 @@ body {
 }
 
 .content-container h1 {
-    font-size: 22px; /* Slightly larger font for the header */
     margin-bottom: 20px;
     font-family: "Arya", sans-serif; /* Apply the new font */
     letter-spacing: 5px; /* Increase letter spacing for the header */
     font-weight: 100; /* Use regular weight for the header */
+}
+
+@media (max-width: 500px) {
+    .content-container h1 {
+        font-size: 22px;
+    }
+
+    .content-container {
+        max-width: 500px;
+    }
+
+    .header-img {
+        width: 150vw; /* Adjust image width for smaller screens */
+        transform: translateX(-14%);
+    }
+}
+
+@media (min-width: 501px) {
+    .header-img {
+        width: 100vw; /* Keep larger width for bigger screens */
+    }
+
+    .content-container {
+        max-width: 750px;
+    }
+
+    .content-container h1 {
+        font-size: 36px;
+    }
 }
 
 .content-container label {
@@ -81,7 +106,7 @@ body {
     background: none;
     border: none;
     color: rgb(41, 58, 79);
-    font-size: 16px;
+    font-size: 24px;
     cursor: pointer;
     padding: 0;
 }
@@ -151,8 +176,8 @@ ul#autocomplete-list, ul#tablemates {
     left: 50%; /* Center the button horizontally */
     transform: translateX(-50%); /* Adjust for centering */
     padding: 5px 15px; /* Adjust padding for better alignment */
-    font-size: 14px;
-    width: 160px;
+    font-size: 16px;
+    width: 180px;
     line-height: 1.2; /* Reduce line height for the button text */
     color: rgb(41, 58, 79);
     background-color: #f0f0f0;
