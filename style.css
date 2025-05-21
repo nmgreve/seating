@@ -1,5 +1,6 @@
 body {
-    font-family: "Asap Condensed"; /* Stylish sans-serif font */
+    font-family: "Arya", sans-serif; /* Stylish sans-serif font */
+    line-height: 1.2; /* Adjust line height to reduce vertical spacing */
     padding: 0;
     margin: 0; /* Remove default margin */
     background: rgb(41, 58, 79);
@@ -36,30 +37,32 @@ body {
     max-width: 500px;
     margin: auto;
     padding: 20px;
-    margin-top: -20px;
+    margin-top: -50px;
     margin-bottom: 100px;
 }
 
 .content-container h1 {
     font-size: 32px; /* Slightly larger font for the header */
     margin-bottom: 20px;
-    font-family: "Asap Condensed"; /* Apply the new font */
+    font-family: "Arya", sans-serif; /* Apply the new font */
 }
 
 .content-container label {
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
-    font-family: "Asap Condensed"; /* Apply the new font to other elements */
+    font-family: "Arya", sans-serif; /* Apply the new font to other elements */
 }
 
 input {
     margin-top: 10px;
     width: 100%; /* Ensure the input spans the full width of its container */
-    padding: 12px;
+    padding: 8px 12px; /* Reduce vertical padding */
     font-size: 16px;
+    line-height: 1.2; /* Reduce line height for the input text */
     box-sizing: border-box; /* Include padding and border in the element's total width */
-    font-family: "Asap Condensed"; /* Apply the new font to other elements */
+    font-family: "Arya", sans-serif; /* Apply the new font to other elements */
+    height: 40px; /* Explicitly set height to ensure consistent appearance */
 }
 
 ul#autocomplete-list {
@@ -75,9 +78,9 @@ ul#autocomplete-list {
 }
 
 ul#autocomplete-list li {
-    padding: 10px;
-    cursor: pointer;
-    font-family: "Asap Condensed"; /* Apply the new font to other elements */
+    padding: 8px; /* Adjust padding to reduce vertical space */
+    line-height: 1.2; /* Reduce line height for list items */
+    font-family: "Arya", sans-serif; /* Apply the new font to other elements */
 }
 
 ul#autocomplete-list li:hover {
@@ -109,15 +112,16 @@ ul#autocomplete-list, ul#tablemates {
     bottom: 30px; /* 40px from the bottom of the viewable page */
     left: 50%; /* Center the button horizontally */
     transform: translateX(-50%); /* Adjust for centering */
-    padding: 5px 10px;
+    padding: 8px 16px; /* Adjust padding for better alignment */
     font-size: 16px;
+    line-height: 1.2; /* Reduce line height for the button text */
     color: rgb(41, 58, 79);
     background-color: #f0f0f0;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     text-align: center;
-    font-family: "Asap Condensed"; /* Apply the new font to the button */
+    font-family: "Arya", sans-serif; /* Apply the new font to the button */
 }
 
 .return-button:hover {
