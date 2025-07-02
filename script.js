@@ -12,19 +12,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
   input.addEventListener('input', function () {
     const value = this.value.toLowerCase();
-    list.innerHTML = ''; // Clear the current list
-
-    if (!value) return; // Exit if the input is empty
-
+    list.innerHTML = '';
+  
+    if (!value) return;
+  
     // Filter and limit the results to the top 4 matches
     const matches = data.filter(item => item.name.toLowerCase().includes(value));
+  
+    // Prioritize matches that start with the input
+    matches.sort((a, b) => {
+      const aName = a.name.toLowerCase();
+      const bName = b.name.toLowerCase();
+      const aStarts = aName.startsWith(value);
+      const bStarts = bName.startsWith(value);
+  
+      if (aStarts && !bStarts) return -1;
+      if (!aStarts && bStarts) return 1;
+      return aName.localeCompare(bName);
+    });
+  
     matches.slice(0, 4).forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = item.name;
-        li.addEventListener('click', () => selectName(item.name));
-        list.appendChild(li);
+      const li = document.createElement('li');
+      li.textContent = item.name;
+      li.addEventListener('click', () => selectName(item.name));
+      list.appendChild(li);
     });
   });
+  
 
   document.getElementById('clearButton').addEventListener('click', () => {
     const input = document.getElementById('nameInput');
