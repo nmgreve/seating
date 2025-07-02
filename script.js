@@ -1,7 +1,7 @@
 let data = [];
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('data/seating.csv')
+  fetch(`data/seating.csv?cacheBust=${Date.now()}`) // Add cache-busting query parameter
     .then(response => response.text())
     .then(csv => {
       data = parseCSV(csv);
