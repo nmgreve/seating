@@ -1,10 +1,13 @@
 let data = [];
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetch(`data/seating.csv?cacheBust=${Date.now()}`)
+  fetch('data/seating.csv', { cache: 'no-store' })
     .then(response => response.text())
     .then(csv => {
       data = parseCSV(csv);
+    })
+    .catch(error => {
+      console.error('Failed to load seating.csv:', error);
     });
 
   const input = document.getElementById('nameInput');
