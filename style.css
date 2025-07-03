@@ -98,6 +98,13 @@ body {
     font-family: "Arya", sans-serif;
 }
 
+#nameInput::placeholder {
+  color: #222;           /* Darker color */
+  font-weight: 700;      /* Bold */
+  opacity: 1;            /* Ensure full opacity */
+  font-size: 1.05em;     /* Slightly larger, optional */
+}
+
 .clear-button {
     position: absolute;
     right: 10px; /* Position the button inside the input field */
@@ -161,7 +168,7 @@ ul#autocomplete-list, ul#tablemates {
 }
 
 #result img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     margin-top: 10px;
 }
