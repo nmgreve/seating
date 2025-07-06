@@ -58,7 +58,7 @@ function selectName(name) {
 
   const tablemates = data.filter(item => item.table === entry.table && item.name !== name);
   document.getElementById('tableNumber').textContent = entry.table;
-  document.getElementById('tableImage').src = `map/table${entry.table.padStart(2, '0')}.png`;
+  document.getElementById('tableImage').src = `map/table${entry.table.padStart(2, '0')}.svg`;
 
   const matesList = document.getElementById('tablemates');
   matesList.innerHTML = '';

@@ -36,12 +36,10 @@ body {
 .content-container {
     margin: auto;
     padding: 20px;
-    margin-top: -70px;
     margin-bottom: 50px;
 }
 
 .content-container h1 {
-    margin-bottom: 20px;
     font-family: "Arya", sans-serif; /* Apply the new font */
     letter-spacing: 5px; /* Increase letter spacing for the header */
     font-weight: 100; /* Use regular weight for the header */
@@ -50,10 +48,17 @@ body {
 @media (max-width: 500px) {
     .content-container h1 {
         font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .content-container h3 {
+        margin-bottom: 5px;
+        margin-top: 5px;
     }
 
     .content-container {
         max-width: 500px;
+        margin-top: -40px;
     }
 
     .header-img {
@@ -69,10 +74,12 @@ body {
 
     .content-container {
         max-width: 750px;
+        margin-top: -70px;
     }
 
     .content-container h1 {
         font-size: 36px;
+        margin-bottom: 20px;
     }
 }
 
@@ -168,9 +175,8 @@ ul#autocomplete-list, ul#tablemates {
 }
 
 #result img {
-    max-width: 75%;
+    max-width: 100%;
     height: auto;
-    margin-top: 10px;
 }
 
 .hidden {
@@ -179,17 +185,17 @@ ul#autocomplete-list, ul#tablemates {
 
 .return-button {
     position: fixed; /* Fix the button relative to the viewport */
-    bottom: 20px; /* px from the bottom of the viewable page */
-    left: 50%; /* Center the button horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    padding: 5px 15px; /* Adjust padding for better alignment */
-    font-size: 16px;
-    width: 180px;
-    line-height: 1.2; /* Reduce line height for the button text */
+    bottom: 10px; /* px from the bottom of the viewable page */
+    right: 10px; /* Center the button horizontally */
+    padding: 7px 0px; /* Adjust padding for better alignment */
+    padding-bottom: 12px;
+    font-size: 14px;
+    width: 75px;
+    line-height: 1.3; /* Reduce line height for the button text */
     color: rgb(41, 58, 79);
     background-color: #f0f0f0;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: background-color 0.3s ease;
     text-align: center;
     font-family: "Arya", sans-serif; /* Apply the new font to the button */
