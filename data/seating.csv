@@ -1,5 +1,4 @@
 name,table
-1 Carrier,20
 Abby Brown,02
 Abhinav Gupta,01
 Addi Teeple,17
@@ -14,10 +13,20 @@ Angela Eubanks,26
 Ansleigh Amory,25
 Astrid Garcia,22
 Audrey Brienza,04
+available,02
+available,20
+available,20
+available,20
+available,16
+available,16
+available,21
+available,21
+available,22
+available,22
+available,26
 Aya Petrenko,00
 Becky Batey,25
 Benji Singletary,15
-Beth Singletary,15
 Beverly Hill,18
 Bill Barrow,14
 Billy Bellini,04
@@ -48,7 +57,6 @@ Colleen Kortokrax,06
 Corinne Hill,00
 Curt Maurer,08
 Dan Beatty,11
-Dan Singletary,15
 Daniel Nguyen,07
 David Piraban,03
 David Straub,05
@@ -87,6 +95,7 @@ Hann Wei,04
 Haywood Hamilton,20
 Heather Pruitt,18
 Heather Robertson,11
+Ian Doering,15
 Isla Hill,16
 IV Hill,18
 Jacob Torbert,05
@@ -172,7 +181,6 @@ Robert Vrolijk,02
 Roger Mack,19
 Ross Johnston,10
 Roxanne Thomas,23
-Ryanne Carrier,20
 Sabin Placanica,02
 Sam Kemp,05
 Sam Singletary,15
@@ -182,7 +190,7 @@ Sammy Rizzo,07
 Sarah LeVan,09
 Shannon Johnston,10
 Shannon Simcox,01
-Sharon Spradley,16
+Sharon Spradley,18
 Shawn McKelvey,00
 Shirley Teeple,25
 Sophia Croushore,15
@@ -209,7 +217,7 @@ Wade Snyder,12
 Walker Cannon,06
 Walker Smith,01
 Wallace Rowe,24
-Warren Spradley,16
+Warren Spradley,18
 William Frederick,09
 William Poole,10
 Zach Harker,22
